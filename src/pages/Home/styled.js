@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import backgroundOne from '../../assets/images/background/bg1.jpg';
 import backgroundTwo from '../../assets/images/background/bg2.jpg';
 import backgroundThree from '../../assets/images/background/bg3.jpg';
+import backgroundOneMobile from '../../assets/images/background/bg1.jpg';
+import backgroundTwoMobile from '../../assets/images/background/bg2.jpg';
+import backgroundThreeMobile from '../../assets/images/background/bg3.jpg';
 
 export const HomeSectionOne = styled.section`
     width: 100vw;
@@ -13,6 +16,7 @@ export const HomeSectionOne = styled.section`
     justify-content: center;
     align-items: center;
     background-image: url(${backgroundOne})
+
     `;
 
 export const HomeContainerOne = styled.div`
@@ -22,9 +26,20 @@ export const HomeContainerOne = styled.div`
     height: 100vh;
     width: 100%;
     margin: 0 auto;
-    //background-color: yellow;
     grid-template-columns: auto auto;
     grid-gap: 35px 35px;
+
+    @media (max-width: 600px){
+        display: grid;
+        align-items: center;
+        justify-content: center;    
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
     `;
 
 export const HomeHeader = styled.div`
@@ -44,6 +59,14 @@ export const TextoCabecalho = styled.h1`
     color: white;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Staatliches', cursive;
+
+    @media (max-width: 600px){
+        color: white;
+        font-size: 40px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: 'Staatliches', cursive;
+    }
     `;
 
 export const TextoCabecalhoA = styled.span`
@@ -53,6 +76,14 @@ export const TextoCabecalhoA = styled.span`
     color: #ffe63d;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Staatliches', cursive;
+
+    @media (max-width: 600px){
+        color: white;
+        font-size: 40px;
+        color: #ffe63d;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: 'Staatliches', cursive;
+    }
     `;
 
     
@@ -80,6 +111,12 @@ export const Img = styled.img`
     &:hover{
         transform: scale(1.05)
     }
+
+    @media (max-width: 600px){
+        height: 150px;
+        width: 300px;    
+        transition: 0.3s;
+    }
     `;
 
 export const ImgLogo = styled.img`
@@ -89,6 +126,13 @@ export const ImgLogo = styled.img`
 
     &:hover{
         transform: scale(1.05)
+    }
+
+    @media (max-width: 600px){
+        height: 150px;
+        width: 300px;    
+        transition: 0.3s;
+
     }
     `;
 
@@ -115,6 +159,18 @@ export const HomeContainerTwo = styled.div`
     margin: 0 auto;
     grid-template-columns: auto auto auto;
     grid-gap: 35px 35px 35px;
+
+    @media (max-width: 600px){    
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+        grid-template-columns: auto;
+        grid-gap: 15px;
+    }
     `;
 
  export const CardTwo = styled.div`
@@ -130,6 +186,18 @@ export const HomeContainerTwo = styled.div`
 
     &:hover{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 600px){    
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        text-align: center;
+        padding: 20px;
+        margin: 25px;
+        border-radius: 15px; /* 5px rounded corners */
+        background-color: white;
+        width: 200px;
+        height: 300px;
     }
     `;
 
@@ -150,6 +218,12 @@ export const ImgBandeira = styled.img`
 
     &:hover{
         transform: scale(1.05)
+    }
+
+    @media (max-width: 600px){    
+        height: 100px;
+        width: 100px;    
+        transition: 0.3s;
     }
     `;
 
@@ -207,6 +281,7 @@ export const HomeSectionThree = styled.section`
     justify-content: center;
     align-items: center;
     background-image: url(${backgroundThree})
+
     `;
 
 export const HomeContainerThree = styled.div`
@@ -230,6 +305,15 @@ export const Card = styled.div`
 
     &:hover{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 600px){    
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 15px; /* 5px rounded corners */
+        background-color: white;
+        width: 300px;
+        height: auto;
     }
     `;
 
@@ -293,6 +377,17 @@ export const HomeFooter = styled.div`
     justify-content: center;
     font-size: 20px;
     background-color: #314d55;
+
+    @media (max-width: 600px){    
+        width: 100vw;
+        height: 90px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 12px;
+        background-color: #314d55;
+    }
     `;
 
 export const Paragrafo = styled.p`
@@ -304,6 +399,14 @@ export const Paragrafo = styled.p`
     & a {
         text-decoration: none;
         color: white;
+    }
+
+    @media (max-width: 600px){    
+        font-family: sans-serif;
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
     }
     `;
 
