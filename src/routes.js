@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route, BrowserRouter} from 'react-router-dom';
-import Repositories from './pages/Agradecimento';
+import Agradecimento from './pages/Agradecimento';
 import Home from './pages/Home';
 
 export default function Routes() { //Exact para deixar exatamente a Barra
@@ -8,7 +8,7 @@ export default function Routes() { //Exact para deixar exatamente a Barra
         <BrowserRouter>
             <Switch>
                 <Route path='/' exact component={Home}/>
-                <Route path='/repositories' component={Repositories}/>
+                <Route path='/agradecimento' component={Agradecimento}/>
             </Switch>
         </BrowserRouter>
     )

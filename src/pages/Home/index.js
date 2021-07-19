@@ -5,12 +5,21 @@ import ImgSpain from '../../assets/images/elements/img-2.png';
 import ImgGerman from '../../assets/images/elements/img-3.png';
 import BlackFriday from '../../assets/images/elements/black-friday.png';
 import React, {useState} from 'react';
-import axios from 'axios';
 import * as S from './styled';
 import { useHistory } from 'react-router-dom';
 
 function App(props) { //<> são fragments - TAGS VAZIAS
+  const history = useHistory();
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  //useState é um Array com 2 posições [usuario, setUsuario] - (1) Valor do Estado / (2) Funcao para Setar o Valor
+  
 
+  function handleCadastra() {
+      localStorage.setItem('nome',{nome});
+      localStorage.setItem('email',{email});
+      history.push('/agradecimento')
+  }
 
   return (
     <>
@@ -86,12 +95,11 @@ function App(props) { //<> são fragments - TAGS VAZIAS
             Para receber as ofertas em primeira mão, preencha o campo abaixo com o seu melhor email:
           </S.H4>
           <S.CardContainer>
-          <S.Input className="nome" type="text" placeholder="Nome"   />
-          <S.Input className="email" type="email" placeholder="Insira aqui o seu melhor email..." />
-          <S.Button type="button" >Cadastrar</S.Button>
+          <S.Input className="nome" type="text" placeholder="Nome" value={nome} onChange={e => setNome(e.target.value)}/>
+          <S.Input className="email" type="email" placeholder="Insira aqui o seu melhor email..." value={email} onChange={e => setEmail(e.target.value)} />
+          <S.Button type="button" onClick={handleCadastra}>Cadastrar</S.Button>
           </S.CardContainer>
         </S.Card>
-
 
       </S.HomeContainerThree>
 
