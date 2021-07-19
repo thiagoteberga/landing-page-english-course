@@ -19,14 +19,27 @@ export default function Agradecimento(){
     }, []);
 
     return (
-        <S.Container>
-        <S.Title>Olá {nome}, obrigado por cadastrar o email {email} em nossa base de dados!</S.Title>
-        <S.List>
-        
-        
-        
-        </S.List>
-        <S.LinkHome to = "/">Voltar</S.LinkHome>
-        </S.Container>
+
+        <S.HomeSectionThree>
+        <S.HomeContainerThree>
+          <S.Card>
+            <S.H4>
+                Olá {nome}, obrigado por cadastrar o email {email} em nossa base de dados!
+            </S.H4>
+            <S.CardContainer>
+                <S.LinkHome to = "/">Voltar</S.LinkHome>
+            </S.CardContainer>
+          </S.Card>
+  
+        </S.HomeContainerThree>
+  
+        <S.HomeFooter>
+          <S.Paragrafo>
+          Desenvolvido por <b><a href="https://github.com/thiagoteberga/landing-page-english-course">Thiago Teberga</a></b> - Hiring Coders
+          <br/>
+          Todos os direitos reservados.
+          </S.Paragrafo>
+        </S.HomeFooter>
+      </S.HomeSectionThree>
     )
 }
