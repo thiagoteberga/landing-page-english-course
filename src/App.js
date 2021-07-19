@@ -1,28 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Routes from './routes';
 
-function App() {
+function App(props) { //<> são fragments - TAGS VAZIAS
+  /*
   fetch(process.env.REACT_APP_API_URL || 'http://localhost:8080/api/v1')
   .then(() => console.log('DEU CERTO'))
   .catch(() => console.log('DEU ERRO'))
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+  */
+    return (
+      <Routes></Routes>
+    );
+  }
+  
+  export default App;
