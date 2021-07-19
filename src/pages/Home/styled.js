@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import backgroundOne from '../../assets/images/background/bg1.jpg';
 import backgroundTwo from '../../assets/images/background/bg2.jpg';
 import backgroundThree from '../../assets/images/background/bg3.jpg';
-import backgroundOneMobile from '../../assets/images/background/bg1.jpg';
-import backgroundTwoMobile from '../../assets/images/background/bg2.jpg';
-import backgroundThreeMobile from '../../assets/images/background/bg3.jpg';
 
 export const HomeSectionOne = styled.section`
     width: 100vw;
