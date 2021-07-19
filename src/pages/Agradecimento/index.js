@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './styled';
-import { useHistory } from 'react-router';
 
 export default function Agradecimento(){
     const [nome, setNome] = useState([]);
     const [email, setEmail] = useState([]);
-    const history = useHistory();
 
     useEffect(() => {
 
@@ -17,9 +15,7 @@ export default function Agradecimento(){
             console.log(emailUsuario);
             console.log(nomeUsuario);
             localStorage.clear();
-        } else {
-            history.push('/');
-        }
+        } 
     }, []);
 
     return (
