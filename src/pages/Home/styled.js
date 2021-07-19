@@ -40,7 +40,7 @@ export const HomeHeader = styled.div`
 export const TextoCabecalho = styled.h1`
     //background-color: green;
     color: white;
-    font-size: 40px;
+    font-size: 80px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Staatliches', cursive;
@@ -49,7 +49,7 @@ export const TextoCabecalho = styled.h1`
 export const TextoCabecalhoA = styled.span`
     //background-color: green;
     color: white;
-    font-size: 40px;
+    font-size: 90px;
     color: #ffe63d;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Staatliches', cursive;
@@ -73,8 +73,8 @@ export const ContentPartTwo = styled.div`
 `;
 
 export const Img = styled.img`
-    height: 200px;
-    width: 400px;    
+    height: 350px;
+    width: 650px;    
     transition: 0.3s;
 
     &:hover{
@@ -82,9 +82,9 @@ export const Img = styled.img`
     }
     `;
 
-    export const ImgLogo = styled.img`
-    height: 150px;
-    width: 300px;    
+export const ImgLogo = styled.img`
+    height: 300px;
+    width: 600px;    
     transition: 0.3s;
 
     &:hover{
@@ -121,12 +121,12 @@ export const HomeContainerTwo = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin: 25px;
     border-radius: 15px; /* 5px rounded corners */
     background-color: white;
-    width: 200px;
-    height: auto;
+    width: 400px;
+    height: 500px;
 
     &:hover{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -144,8 +144,8 @@ export const CardContainerTwo = styled.div`
     `;
 
 export const ImgBandeira = styled.img`
-    height: 100px;
-    width: 100px;    
+    height: 200px;
+    width: 200px;    
     transition: 0.3s;
 
     &:hover{
@@ -155,7 +155,7 @@ export const ImgBandeira = styled.img`
 
     export const ParagrafoCurso = styled.p`
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 24px;
     text-align: center;
     color: #3a3a3a;   
     transition: 0.3s;
@@ -168,7 +168,7 @@ export const ImgBandeira = styled.img`
 
 export const ValorAnterior = styled.p`
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     color: #c80000;
     text-decoration: line-through;
@@ -181,7 +181,7 @@ export const ValorAnterior = styled.p`
 
 export const ValorNovo = styled.p`
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 24px;
     text-align: center;
     color: #3a3a3a;   
     transition: 0.3s;
@@ -225,7 +225,7 @@ export const Card = styled.div`
     transition: 0.3s;
     border-radius: 15px; /* 5px rounded corners */
     background-color: white;
-    width: 350px;
+    width: 700px;
     height: auto;
 
     &:hover{
@@ -246,8 +246,8 @@ export const CardContainer = styled.div`
 export const H4 = styled.h4`
     //background-color: green;
     color: black;
-    font-size: 10px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 15px;
     text-align: justify;
     color: #314d55;
     font-family: 'Arial';
@@ -255,8 +255,9 @@ export const H4 = styled.h4`
     
 export const Input = styled.input`
     border: 1px solid #ddd;
-    height: 15px;
+    height: 25px;
     padding: 10px;
+    font-size: 17px;
     border-radius: 10px; 
 
     &:focus,
@@ -267,7 +268,8 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-    height: 30px;
+    height: 50px;
+    font-size: 20px;
 
     border: 1px solid #000;
     background: #314d55;
@@ -284,17 +286,18 @@ export const Button = styled.button`
 
 export const HomeFooter = styled.div`
     width: 100vw;
-    height: 45px;
+    height: 90px;
     display: grid;
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-size: 20px;
     background-color: #314d55;
     `;
 
 export const Paragrafo = styled.p`
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 18px;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px #000000;

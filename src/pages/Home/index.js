@@ -16,8 +16,8 @@ function App(props) { //<> são fragments - TAGS VAZIAS
   
 
   function handleCadastra() {
-      localStorage.setItem('nome',{nome});
-      localStorage.setItem('email',{email});
+      localStorage.setItem('nome',JSON.stringify(nome));
+      localStorage.setItem('email',JSON.stringify(email));
       history.push('/agradecimento')
   }
 

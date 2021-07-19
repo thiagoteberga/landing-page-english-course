@@ -3,18 +3,19 @@ import * as S from './styled';
 import { useHistory } from 'react-router';
 
 export default function Agradecimento(){
-    const history = useHistory();
     const [nome, setNome] = useState([]);
     const [email, setEmail] = useState([]);
+    const history = useHistory();
 
     useEffect(() => {
-        let nome = localStorage.getItem('nome');
-        let email = localStorage.getItem('email');
-        if(email != null) {
-            setEmail(email);
-            setNome(nome);
-            console.log(email);
-            console.log(nome);
+
+        let nomeUsuario = localStorage.getItem('nome');
+        let emailUsuario = localStorage.getItem('email');
+        if(emailUsuario != null) {
+            setEmail(emailUsuario);
+            setNome(nomeUsuario);
+            console.log(emailUsuario);
+            console.log(nomeUsuario);
             localStorage.clear();
         } else {
             history.push('/');
@@ -23,10 +24,11 @@ export default function Agradecimento(){
 
     return (
         <S.Container>
-        <S.Title>Obrigado por se cadastrar!</S.Title>
+        <S.Title>Olá {nome}, obrigado por cadastrar o email {email} em nossa base de dados!</S.Title>
         <S.List>
-        ${nome}
-        ${email}
+        
+        
+        
         </S.List>
         <S.LinkHome to = "/">Voltar</S.LinkHome>
         </S.Container>
